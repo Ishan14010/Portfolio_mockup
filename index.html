@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Parisienne&display=swap" rel="stylesheet">
+
+
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+    <div class="modal" id="warningModal">
+        <div class="modal-content">
+            <p>This website contains fictional content created for a project. The information provided here is not real.</p>
+            <button id="closeModalBtn">Got it!</button>
+        </div>
+    </div>
+    
+    <nav class="navbar">
+        <a href="#" class="brand">Ishan's Portfolio</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+    
+    <!---home section-->
+    <section id="home" class="home">
+        <div class="home-content">
+            <div class="text-column">
+                <h1>Welcome to Ishan's Portfolio</h1>
+                <span><I>Coding is addiction!!! </I></span>
+            <div class="image-column">
+                <button id="viewMoreButton" class="view-more-button">View More</button>
+                <img src="ishan.png" alt="Ishan" class="profile-image">
+            </div>
+        </div>
+    </section>
+            
+
+
+<!-- About section -->
+<section id="about" class="about">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <div class="about-details">
+            <div class="about-text">
+                <div class="about-text">
+                    <p>Hello there, I'm Ishan, a web magician hailing from the digital wonderland known as Pixelville.</p>
+                    <p>From the early days of my coding journey, I've been conjuring lines of <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, and <span class="highlight">JavaScript</span> spells to craft enchanting online realms.</p>
+                    <p>One mystical evening, a coding book mysteriously appeared on my doorstep, and as I delved into its pages, the world of web development unfolded before my eyes.</p>
+                    <p>With my trusty keyboard wand and a penchant for innovative design, I've forged bridges of interactivity that connect users to captivating online experiences.</p>
+                    <p>When I'm not weaving my code spells, you'll find me embarking on epic quests in the virtual realm or sipping on a potion of creativity while painting digital landscapes.</p>
+                    <p>Join me on my journey as we unravel the secrets of the digital cosmos and bring extraordinary visions to life.</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="profile-card" id="profileCard">
+                    <div class="profile-card-inner" id="profileCardInner">
+                        <div class="profile-card-front">
+                            <img src="profile-photo.jpg" alt="Profile Photo" id="profileImage">
+                        </div>
+                        <div class="profile-card-back">
+                           <p> Fuck you!! lol</p>
+                            <pre>
+                            ***    ***  
+                            ** **  ** ** 
+                           **   ****   **
+                           **    **    **
+                          **            **
+                          **            **
+                          **            **
+                           **          ** 
+                            **        **  
+                             **      **   
+                              ********    
+                                ****
+                                
+                          </pre>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    
+    <!--- skills section-->
+    <section id="skills" class="skills">
+        <div class="skills-content">
+            <h2>Skills</h2>
+            <div class="skill-container">
+                <div class="skill-box top">Web Design</div>
+                <div class="skill-box left">Front-end Development</div>
+                <div class="skill-box center">
+                    <img src="skills-center-image.jpeg" alt="Skills Center" class="center-image">
+                </div>
+                <div class="skill-box right">UI/UX Design</div>
+                <div class="skill-box bottom">Project Management</div>
+            </div>
+        </div>
+    </section>
+    
+    <!--- project section -->
+    <section id="projects" class="projects">
+        <div class="projects-content">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project top-left">
+                    <img src="project1.webp" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Designed and developed a personal portfolio website to showcase skills and projects.</p>
+                    </div>
+                </div>
+                <div class="project top-right">
+                    <img src="project2.png" alt="Project 2">
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>Built a responsive e-commerce platform with product listings, shopping cart, and checkout.</p>
+                    </div>
+                </div>
+                <div class="project bottom-left">
+                    <img src="project3.jpeg" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Travel Blog</h3>
+                        <p>Created a travel blog with interactive map, photo galleries, and user comments.</p>
+                    </div>
+                </div>
+                <div class="project bottom-right">
+                    <img src="project4.png" alt="Project 4">
+                    <div class="project-info">
+                        <h3>Social Media App</h3>
+                        <p>Developed a social media app with user profiles, posts, likes, and comments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section-->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>You can connect with me through the form below or via my social media:</p>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="#" class="custom-cursor"><img src="linkedin icon.png" alt="LinkedIn"></a>
+            <a href="#" class="custom-cursor"><img src="twitter icon.jpeg" alt="Twitter"></a>
+            <a href="#" class="custom-cursor"><img src="instagram icon.jpeg" alt="Instagram"></a>
+        </div>
+        
+    </section>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-button"><i class="fas fa-arrow-up"></i></button>
+    
+    <footer class="footer">
+        <p>&copy; 2023 Ishan's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll to top button code
+        const scrollToTopButton = document.getElementById('scrollToTopBtn');
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', scrollToTop);
+    </script>
+
+    <script>// JavaScript for warning modal
+        const warningModal = document.getElementById('warningModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        
+        // Show the modal on page load
+        window.addEventListener('load', () => {
+            warningModal.style.display = 'block';
+        });
+        
+        // Close the modal when the "Got it!" button is clicked
+        closeModalBtn.addEventListener('click', () => {
+            warningModal.style.display = 'none';
+        });
+        </script>
+         
+         <script>
+            const viewMoreButton = document.getElementById('viewMoreButton');
+            const hiddenSections = document.querySelectorAll('.hidden-section');
+            const hiddenContent = document.querySelectorAll('.hidden-content');
+        
+            viewMoreButton.addEventListener('click', () => {
+                hiddenSections.forEach(section => {
+                    section.style.display = 'block';
+                });
+                hiddenContent.forEach(content => {
+                    content.style.display = 'block';
+                });
+                viewMoreButton.style.display = 'none';
+            });
+        </script>
+
+</body>
+</html>

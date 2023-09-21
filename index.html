@@ -11,12 +11,15 @@
     <title>Your Name - Portfolio</title>
 </head>
 <body>
-    <div class="modal" id="warningModal">
-        <div class="modal-content">
-            <p>This website contains fictional content created for a project. The information provided here is not real.</p>
-            <button id="closeModalBtn">Got it!</button>
-        </div>
+    <!-- This is the section of code you need to adjust -->
+<div class="modal" id="warningModal">
+    <div class="modal-content">
+        <!-- Replace the content inside this <p> tag with your welcoming message -->
+        <p>Welcome to my portfolio! Explore the digital wonders I've created for you.</p>
+        <button id="closeModalBtn">Got it!</button>
     </div>
+</div>
+
     
     <nav class="navbar">
         <a href="#" class="brand">Ishan's Portfolio</a>
@@ -28,17 +31,21 @@
     </nav>
     
     <!---home section-->
-    <section id="home" class="home">
-        <div class="home-content">
-            <div class="text-column">
-                <h1>Welcome to Ishan's Portfolio</h1>
-                <span><I>Coding is addiction!!! </I></span>
+<section id="home" class="home">
+    <div class="home-content">
+        <div class="text-column">
+            <div class="typing-animation">
+                <span id="welcome-text"></span>
+            </div>
+            <span><I>Coding is addiction!!! </I></span>
             <div class="image-column">
                 <button id="viewMoreButton" class="view-more-button">View More</button>
                 <img src="ishan.png" alt="Ishan" class="profile-image">
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
             
 
 
@@ -108,42 +115,51 @@
         </div>
     </section>
     
-    <!--- project section -->
-    <section id="projects" class="projects">
-        <div class="projects-content">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project top-left">
+    <!-- Project Section -->
+<section id="projects" class="projects">
+    <div class="projects-content">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project top-left">
+                <a href="https://github.com/Ishan14010/AutomatedGunControl" target="_blank">
                     <img src="project1.webp" alt="Project 1">
                     <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>Designed and developed a personal portfolio website to showcase skills and projects.</p>
+                        <h3>Automated Gun Control</h3>
+                        <p>Developed an automated gun control system for enhancing safety.</p>
                     </div>
-                </div>
-                <div class="project top-right">
+                </a>
+            </div>
+            <div class="project top-right">
+                <a href="https://github.com/Ishan14010/Tic_tac_toe-Game" target="_blank">
                     <img src="project2.png" alt="Project 2">
                     <div class="project-info">
-                        <h3>E-commerce Platform</h3>
-                        <p>Built a responsive e-commerce platform with product listings, shopping cart, and checkout.</p>
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>Created a fun and interactive Tic Tac Toe game for two players.</p>
                     </div>
-                </div>
-                <div class="project bottom-left">
+                </a>
+            </div>
+            <div class="project bottom-left">
+                <a href="https://github.com/Ishan14010/2-D_Geormmetry-caculator" target="_blank">
                     <img src="project3.jpeg" alt="Project 3">
                     <div class="project-info">
-                        <h3>Travel Blog</h3>
-                        <p>Created a travel blog with interactive map, photo galleries, and user comments.</p>
+                        <h3>2-D Geometry Calculator</h3>
+                        <p>Designed a 2-D geometry calculator to solve geometric problems.</p>
                     </div>
-                </div>
-                <div class="project bottom-right">
+                </a>
+            </div>
+            <div class="project bottom-right">
+                <a href="https://github.com/Ishan14010/Portfolio_mockup" target="_blank">
                     <img src="project4.png" alt="Project 4">
                     <div class="project-info">
-                        <h3>Social Media App</h3>
-                        <p>Developed a social media app with user profiles, posts, likes, and comments.</p>
+                        <h3>Portfolio Mockup</h3>
+                        <p>Designed and created a portfolio mockup for showcasing projects.</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     
     <!-- Contact Section-->
     <section id="contact" class="contact">
@@ -248,6 +264,26 @@
                 viewMoreButton.style.display = 'none';
             });
         </script>
+        <script>
+            const welcomeText = "Welcome to Ishan's Portfolio";
+            const typingSpeed = 100; // Typing speed in milliseconds
+            const welcomeElement = document.getElementById('welcome-text');
+            let charIndex = 0;
+        
+            function typeWelcomeText() {
+                if (charIndex < welcomeText.length) {
+                    welcomeElement.innerHTML += welcomeText.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeWelcomeText, typingSpeed);
+                }
+            }
+        
+            // Call the typing function when the page loads
+            window.addEventListener('load', () => {
+                typeWelcomeText();
+            });
+        </script>
+        
         <script>
 const runButton = document.getElementById('run-button');
 const codeInput = document.getElementById('code-input');

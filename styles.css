@@ -186,6 +186,7 @@ body {
 
 .about-text p {
     margin-bottom: 15px;
+    font-size: 20px;
 }
 
 .about-image {
@@ -667,3 +668,10 @@ body {
 }
 
 
+.typing-animation {
+    font-size: 36px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #3498db; /* Typing cursor */
+}
